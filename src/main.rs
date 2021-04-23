@@ -1,11 +1,10 @@
 use std::env;
-use std::time::{Instant};
+use std::time::Instant;
 
 mod seive;
 
 fn main() {
-
-	let args: Vec<String> = env::args().collect();
+    let args: Vec<String> = env::args().collect();
     let max = &args[1];
     let parse_max = max.parse().unwrap();
 
